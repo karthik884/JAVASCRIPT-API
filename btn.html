@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="btn.css"  rel="stylesheet">
+</head>
+<body>
+    <button class="btn" data-target="#model1">Model1</button>
+    <button class="btn" data-target="#model2">Model2</button>
+    <div class="model" id="model1">
+        <div class="header">
+            <div class="title">Model Title</div>
+            <button class="btn model-btn" data-target="#model1">&times;</button>
+        </div>
+        <div class="body">
+            Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Hic facilis deleniti optio numquam consectetur
+              dolores, cumque cupiditate officia magni quasi 
+            ratione deserunt placeat laudantium ipsa itaque error quod vitae adipisci.
+        </div>
+    </div>
+    
+    <div class="model" id="model2">
+        <div class="header">
+            <div class="title">Model Title 2</div>
+            <button class="btn model-btn" data-target="#model2">&times;</button>
+        </div>
+        <div class="body">
+            Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Hic facilis deleniti optio numquam consectetur
+              dolores, cumque cupiditate officia magni quasi 
+            ratione deserunt placeat laudantium ipsa itaque error quod vitae adipisci.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<script src="btn.js"> </script>
+</body>
+</html>

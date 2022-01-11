@@ -1,0 +1,60 @@
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+btn:active{
+    transform: scale(0.5);
+}
+
+.model-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.model {
+    width: 450px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: top 0.5s ease-in-out;
+    border: 2px solid rgb(212, 196, 196);
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+}
+
+.model.active {
+    top: 15%;
+}
+
+.header {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#overlay.active {
+    display: block; 
+}
